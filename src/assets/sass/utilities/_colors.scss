@@ -1,0 +1,33 @@
+$light: #eff2f1;
+
+$gray: #6c757d;
+
+$dark-blue: #03045e;
+
+$light-purple: #bbd0ff;
+
+$green: #42c442;
+
+$red: #e5383b;
+
+$yellow: #ffea00;
+
+$colors: (
+  "success": $green,
+  "danger": $red,
+  "warning": $yellow,
+);
+
+@each $name, $hex in $colors {
+  @if $name == "warning" {
+    .bg-#{$name} {
+      background-color: $hex;
+      color: $dark-blue;
+    }
+  } @else {
+    .bg-#{$name} {
+      background-color: $hex;
+      color: $light;
+    }
+  }
+}
