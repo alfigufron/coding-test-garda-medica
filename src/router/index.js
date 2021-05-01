@@ -15,7 +15,7 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    redirect: { name: "TableDemo" },
+    redirect: { name: "ImageRotator" },
   },
   {
     path: "/mockup-demo",
